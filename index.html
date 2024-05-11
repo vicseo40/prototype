@@ -12,9 +12,18 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/modal.css">
-    <title>ProtoType</title>
+    <link rel="stylesheet" href="css/skip.css">
+
+    <title>ProtoType - An Accessible Institutional Homepage</title>
 </head>
+
 <body>
+    <div class="skip-links">
+        <a href="#main" class="skip-link">Skip to main content</a>
+        <a href="#nav" class="skip-link">Skip to navigation</a>
+        <a href="#footer" class="skip-link">Skip to footer</a>
+    </div>    
+
     <header>
       <div class="top-header">
           <div class="LogoTagline">
@@ -35,7 +44,7 @@
                 <span>Ask For<br>Help</span>
             </button>            
           </div>
-          <form class="search-form" role="search">
+          <form class="search-form" role="search" aria-label="Search form">
               <input id="search-input" type="text" name="search" placeholder="Search">
               <button type="submit" aria-label="Submit search">
                   <img src="img/ic-baseline-search.svg" alt="Search icon">
@@ -93,17 +102,17 @@
                   <h3 >Migrationsverket</h3>
                   <p id="migration-explanation">(Swedish Migration Office)</p>
                   <div class="service-options">
-                      <a href="https://www.migrationsverket.se/Om-Migrationsverket/Vart-uppdrag.html" target="_blank">
+                      <a href="https://www.migrationsverket.se/Om-Migrationsverket/Vart-uppdrag.html" target="_blank" aria-label="Learn more about Migrationsverket (opens in new tab)">
                           <button class= "about-buttons"aria-label="About Migrationsverket">
                               <img src="img/pepicons-print-question-5.svg" alt="Icon for more information about Migrationsverket"> About
                           </button>
                       </a>
-                      <a href="https://www.migrationsverket.se/Kontakta-oss.html" target="_blank">
+                      <a href="https://www.migrationsverket.se/Kontakta-oss.html" target="_blank" aria-label="Contact Migrationsverket (opens in new tab)">
                           <button class= "contact-buttons" aria-label="Contact Migrationsverket">
                               <img src="img/contactgroup@2x.png" alt="Icon for contacting Migrationsverket"> Contact
                           </button>
                       </a>
-                      <a href="https://www.migrationsverket.se/" target="_blank">
+                      <a href="https://www.migrationsverket.se/" target="_blank" aria-label="Visit (opens in new tab)">
                           <button class= "visit-buttons" aria-label="Visit Migrationsverket">
                               <img src="img/carbon-direction-straight-right-filled.svg" alt="Icon for visiting Migrationsverket"> Visit
                           </button>
@@ -115,17 +124,17 @@
                   <h3>Skatteverket</h3>
                   <p id="skatteverket-explanation">(Swedish Tax Agency)</p>
                   <div class="service-options">
-                      <a href="https://www.skatteverket.se/omoss.4.76a43be412206334b89800052952.html" target="_blank">
+                      <a href="https://www.skatteverket.se/omoss.4.76a43be412206334b89800052952.html" target="_blank" aria-label="Learn more about Skatteverket (opens in new tab)">
                           <button class= "about-buttons" aria-label="About Skatteverket">
                               <img src="img/pepicons-print-question-5.svg" alt="Icon for more information about Skatteverket"> About
                           </button>
                       </a>
-                      <a href="https://www.skatteverket.se/omoss/kontaktaoss.4.71004e4c133e23bf6db800079651.html" target="_blank">
+                      <a href="https://www.skatteverket.se/omoss/kontaktaoss.4.71004e4c133e23bf6db800079651.html" target="_blank" aria-label="Contact Skatteverket (opens in new tab)">
                           <button class= "contact-buttons" aria-label="Contact Skatteverket">
                               <img src="img/contactgroup@2x.png" alt="Icon for contacting Skatteverket"> Contact
                           </button>
                       </a>
-                      <a href="https://www.skatteverket.se/" target="_blank">
+                      <a href="https://www.skatteverket.se/" target="_blank" aria-label="Visit Skatteverket (opens in new tab)">
                           <button class= "visit-buttons" aria-label="Visit Skatteverket">
                               <img src="img/carbon-direction-straight-right-filled.svg" alt="Icon for visiting Skatteverket"> Visit
                           </button>
@@ -137,17 +146,17 @@
                   <h3>Polismyndigheten</h3>
                   <p id="police-explanation">(Swedish Police)</p>
                   <div class="service-options">
-                      <a href="https://polisen.se/om-polisen/" target="_blank">
+                      <a href="https://polisen.se/om-polisen/" target="_blank" aria-label="Learn more about Polismyndigheten (opens in new tab)">
                           <button class= "about-buttons" aria-label="About Polismyndigheten">
                               <img src="img/pepicons-print-question-5.svg" alt="Icon for more information about Polismyndigheten"> About
                           </button>
                       </a>
-                      <a href="https://polisen.se/om-polisen/kontakt/polisens-adresser/" target="_blank">
+                      <a href="https://polisen.se/om-polisen/kontakt/polisens-adresser/" target="_blank" aria-label="Contact Polismyndigheten (opens in new tab)">
                           <button class= "contact-buttons" aria-label="Contact Polismyndigheten">
                               <img src="img/contactgroup@2x.png" alt="Icon for contacting Polismyndigheten"> Contact
                           </button>
                       </a>
-                      <a href="https://polisen.se/" target="_blank">
+                      <a href="https://polisen.se/" target="_blank" aria-label="Visit Polismyndigheten (opens in new tab)">
                           <button class= "visit-buttons" aria-label="Visit Polismyndigheten">
                               <img src="img/carbon-direction-straight-right-filled.svg" alt="Icon for visiting Polismyndigheten"> Visit
                           </button>
@@ -159,17 +168,17 @@
                   <h3>Arbetsförmedlingen</h3>
                   <p id="employment-explanation">(Swedish Employment Agency)</p>
                   <div class="service-options">
-                      <a href="https://arbetsformedlingen.se/om-oss" target="_blank">
+                      <a href="https://arbetsformedlingen.se/om-oss" target="_blank" aria-label="Learn more about Arbetsförmedlingen (opens in new tab)">
                           <button class= "about-buttons" aria-label="About Arbetsförmedlingen">
                               <img src="img/pepicons-print-question-5.svg" alt="Icon for more information about Arbetsförmedlingen"> About
                           </button>
                       </a>
-                      <a href="https://arbetsformedlingen.se/kontakt" target="_blank">
+                      <a href="https://arbetsformedlingen.se/kontakt" target="_blank" aria-label="Contact Arbetsförmedlingen (opens in new tab)">
                           <button class= "contact-buttons" aria-label="Contact Arbetsförmedlingen">
                               <img src="img/contactgroup@2x.png" alt="Icon for contacting Arbetsförmedlingen"> Contact
                           </button>
                       </a>
-                      <a href="https://arbetsformedlingen.se/" target="_blank">
+                      <a href="https://arbetsformedlingen.se/" target="_blank" aria-label="Visit Arbetsförmedlingen (opens in new tab)">
                           <button class= "visit-buttons" aria-label="Visit Arbetsförmedlingen">
                               <img src="img/carbon-direction-straight-right-filled.svg" alt="Icon for visiting Arbetsförmedlingen"> Visit
                           </button>
@@ -181,17 +190,17 @@
                   <h3>Försäkringskassan</h3>
                   <p id="insurance-explanation">(Swedish National Insurance Agency)</p>
                   <div class="service-options">
-                      <a href="https://www.forsakringskassan.se/om-forsakringskassan/vart-uppdrag" target="_blank">
+                      <a href="https://www.forsakringskassan.se/om-forsakringskassan/vart-uppdrag" target="_blank" aria-label="Learn more about forsakringskassan (opens in new tab)">
                           <button class= "about-buttons" aria-label="About Försäkringskassan">
                               <img src="img/pepicons-print-question-5.svg" alt="Icon for more information about Försäkringskassan"> About
                           </button>
                       </a>
-                      <a href="https://www.forsakringskassan.se/kontakta-forsakringskassan" target="_blank">
+                      <a href="https://www.forsakringskassan.se/kontakta-forsakringskassan" target="_blank" aria-label="Contact forsakringskassan (opens in new tab)">
                           <button class= "contact-buttons" aria-label="Contact Försäkringskassan">
                               <img src="img/contactgroup@2x.png" alt="Icon for contacting Försäkringskassan"> Contact
                           </button>
                       </a>
-                      <a href="https://www.forsakringskassan.se/" target="_blank">
+                      <a href="https://www.forsakringskassan.se/" target="_blank" aria-label="Visit forsakringskassan (opens in new tab)">
                           <button class= "visit-buttons" aria-label="Visit Försäkringskassan">
                               <img src="img/carbon-direction-straight-right-filled.svg" alt="Icon for visiting Försäkringskassan"> Visit
                           </button>
@@ -203,17 +212,17 @@
                   <h3>1177</h3>
                   <p id="health-explanation">(Swedish Health Agency)</p>
                   <div class="service-options">
-                      <a href="https://www.1177.se/Skane/om-1177/om-1177/" target="_blank">
+                      <a href="https://www.1177.se/Skane/om-1177/om-1177/" target="_blank" aria-label="Learn more about 1177 (opens in new tab)">
                           <button class= "about-buttons" aria-label="About 1177">
                               <img src="img/pepicons-print-question-5.svg" alt="Icon for more information about 1177"> About
                           </button>
                       </a>
-                      <a href="https://www.1177.se/Skane/om-1177/om-1177/#section-21627" target="_blank">
+                      <a href="https://www.1177.se/Skane/om-1177/om-1177/#section-21627" target="_blank" aria-label="Contact 1177 (opens in new tab)">
                           <button class= "contact-buttons" aria-label="Contact 1177">
                               <img src="img/contactgroup@2x.png" alt="Icon for contacting 1177"> Contact
                           </button>
                       </a>
-                      <a href="https://www.1177.se/Skane/" target="_blank">
+                      <a href="https://www.1177.se/Skane/" target="_blank" aria-label="Visit 1177 (opens in new tab)">
                           <button class= "visit-buttons" aria-label="Visit 1177">
                               <img src="img/carbon-direction-straight-right-filled.svg" alt="Icon for visiting 1177"> Visit
                           </button>
@@ -256,7 +265,7 @@
     </footer>
     <div>
       <button class="back-to-btn" id="back-to-top" aria-label="Back to Top">
-        <span>Back to Top</span> <!-- This span will be targeted for translation -->
+        <span>Back to Top</span> 
       </button> 
     </div>
 

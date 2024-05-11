@@ -1,24 +1,22 @@
-/*Search.css*/
-/* Form submit button specifics */
 
 form[role="search"] {
     display: flex;
-    align-items: center; /* Aligns input and button vertically */
-    justify-content: flex-end; /* Aligns the search bar to the right */
-    flex-grow: 1; /* Takes remaining space in the header */
+    align-items: center;
+    justify-content: flex-end; 
+    flex-grow: 1; 
 }
 
 form[role="search"] label {
     margin-right: 10px;
     font-weight: bold;
     color: #333;
-    display: none; /* Hides the label visually but keeps it accessible */
+    display: none; 
 }
 
 /* Improving input field styling */
 input[type="text"] {
     margin-left: 25px;
-    flex-grow: 1; /* Allows the input to expand to fill space */
+    flex-grow: 1; 
     padding: 9px;
     padding-left: 15px;
     border: 2px solid #003b49;
@@ -29,7 +27,7 @@ input[type="text"] {
 /* Style for the search button */
 form[role="search"] button {
     padding: 9px 12px;
-    background-color: #003b49; /* Green background for visibility */
+    background-color: #003b49; 
     border: none;
     cursor: pointer;
     border-top-left-radius: 0px;
@@ -37,10 +35,10 @@ form[role="search"] button {
 }
 
 form[role="search"] button:hover {
-    background-color: #028aac; /* Darker green on hover */
+    background-color: #028aac; 
 }
 
 form[role="search"] img {
-    width: 20px; /* Slightly smaller icon within the button */
+    width: 20px; 
     height: 20px;
 }

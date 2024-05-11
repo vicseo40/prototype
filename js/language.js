@@ -114,8 +114,8 @@ function applyTranslation(lang) {
     document.querySelector('.education-info h3').textContent = langData['educationHeader'];
     document.querySelector('.housing-info h3').textContent = langData['housingHeader'];
     document.getElementById('footer').textContent = langData['footerInfo'];
-    document.getElementById('chatbotModalTitle').textContent = langData['chatbotTitle']; // Add a 'chatbotTitle' key in your translations
-    document.getElementById('chatInput').setAttribute('placeholder', langData['chatPlaceholder']); // Add a 'chatPlaceholder' key in your translations
+    document.getElementById('chatbotModalTitle').textContent = langData['chatbotTitle']; 
+    document.getElementById('chatInput').setAttribute('placeholder', langData['chatPlaceholder']);
     document.getElementById('modalTitle').textContent = langData['selectLanguageTitle'];
     document.querySelectorAll('.modal-buttons button[onclick*="changeLanguage()"]').forEach(btn => btn.textContent = langData['applyBtn']);
     document.querySelectorAll('.modal-buttons .close').forEach(btn => btn.textContent = langData['closeBtn']);
@@ -177,7 +177,7 @@ document.addEventListener('DOMContentLoaded', function() {
 document.querySelector('.modal-buttons button[onclick="changeLanguage()"]').addEventListener('click', function() {
     const selectedLang = document.getElementById('languageSelect').value;
     applyTranslation(selectedLang);
-    closeLanguageModal(); // Assuming closeLanguageModal() is your function to hide the language modal
+    closeLanguageModal(); 
 });
 
     

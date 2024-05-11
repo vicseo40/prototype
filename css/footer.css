@@ -4,7 +4,7 @@ footer {
   color: white;
   text-align: center;
   padding: 80px;
-  position: relative; /* Ensures relative positioning for children */
+  position: relative;
 }
 
 
@@ -12,11 +12,11 @@ footer {
     background: #007e9e;
     border: none;
     color: white;
-    padding: 10px 15px; /* Adjust padding as needed */
+    padding: 10px 15px; 
     cursor: pointer;
-    box-shadow: 0 2px 4px rgb(226, 241, 255); /* Soft shadow for depth */
+    box-shadow: 0 2px 4px rgb(226, 241, 255); 
     position: fixed;
     right: 20px;
     bottom: 20px;
-    z-index: 1100; /* higher than the modal's z-index */
+    z-index: 1100;
 }

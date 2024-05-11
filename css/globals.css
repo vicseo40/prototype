@@ -24,20 +24,20 @@ a:hover {
 
 
 h3 {
-    font-size: 14px; /* Slightly smaller than h2 */
+    font-size: 14px;
     font-weight: bold;
 }
 
 .bold-text {
-    font-weight: bold;  /* Class to make any text bold */
+    font-weight: bold;  
 }
 
 main h2, footer h2 {
-    text-decoration: underline; /* Adds underline to all h2 elements within main */
-    font-size: 15px; /* Example size for h2 */
-    font-weight: bold; /* Assuming you want h2 to be bold */
+    text-decoration: underline; 
+    font-size: 15px; 
+    font-weight: bold; 
     text-decoration: underline;
-    text-decoration-thickness: 2px; /* Adjusts the thickness of the underline */
+    text-decoration-thickness: 2px; 
     text-underline-offset: 4px; 
 }
 
@@ -46,7 +46,7 @@ button img {
     filter: brightness(0) invert(1);
 }
 
-/* Or specifically targeting icons within a certain class for more precision */
+/* Specifically targeting icons within a certain class for more precision */
 .interactive-buttons img,
 .service-options img {
     filter: brightness(0) invert(1);

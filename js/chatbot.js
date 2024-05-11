@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (submitButton) {
         submitButton.addEventListener('click', function() {
             processChatInput();
-            closeHelpModal(); // Assuming you want to close the modal after processing input
+            closeHelpModal(); 
         });
     }
 
