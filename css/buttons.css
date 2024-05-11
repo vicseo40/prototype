@@ -1,0 +1,38 @@
+/*Buttons.css*/
+/* General button styling */
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #014557; /* Primary blue color */
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column; /* Stacks icon above the text */
+    align-items: center;
+    gap: 5px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    width: 120px; /* Slightly wider to fit longer text if needed */
+    height: auto;
+}
+
+button img {
+    width: 24px; /* Standard icon size */
+    height: 24px;
+}
+
+/* Hover effect for all buttons */
+button:hover {
+    background-color: #005fa3; /* A darker shade of the primary color for hover */
+}
+
+/* Responsive button adjustments for smaller screens */
+@media (max-width: 768px) {
+    button {
+        width: 100%; /* Full-width buttons on smaller devices */
+        padding: 8px;
+        font-size: 12px; /* Smaller font size to fit on mobile */
+    }
+}

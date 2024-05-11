@@ -1,0 +1,22 @@
+/* Footer styles */
+footer {
+  background-color: #003b49;
+  color: white;
+  text-align: center;
+  padding: 80px;
+  position: relative; /* Ensures relative positioning for children */
+}
+
+
+#back-to-top {
+    background: #007e9e;
+    border: none;
+    color: white;
+    padding: 10px 15px; /* Adjust padding as needed */
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgb(226, 241, 255); /* Soft shadow for depth */
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1100; /* higher than the modal's z-index */
+}

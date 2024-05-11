@@ -1,0 +1,53 @@
+/* Reset and base styles */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Helvetica', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #003b49;;
+    background-color: #f4f4f4;
+}
+
+a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+h3 {
+    font-size: 14px; /* Slightly smaller than h2 */
+    font-weight: bold;
+}
+
+.bold-text {
+    font-weight: bold;  /* Class to make any text bold */
+}
+
+main h2, footer h2 {
+    text-decoration: underline; /* Adds underline to all h2 elements within main */
+    font-size: 15px; /* Example size for h2 */
+    font-weight: bold; /* Assuming you want h2 to be bold */
+    text-decoration: underline;
+    text-decoration-thickness: 2px; /* Adjusts the thickness of the underline */
+    text-underline-offset: 4px; 
+}
+
+/* Targeting all img tags within buttons */
+button img {
+    filter: brightness(0) invert(1);
+}
+
+/* Or specifically targeting icons within a certain class for more precision */
+.interactive-buttons img,
+.service-options img {
+    filter: brightness(0) invert(1);
+}

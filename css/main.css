@@ -1,0 +1,161 @@
+/* Main section styles */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers content horizontally */
+    background-color: rgb(241, 241, 241);
+}
+
+/* Style for the welcome section */
+#welcome {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #ecead9; /* Soft off-white for subtle contrast */
+    width: 100%; /* Adjust based on preference */
+    text-align: center; /* Center text */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Soft shadow for depth */
+    color: black;
+}
+
+.highlight {
+    background-color: #ffdd57; /* Choose a noticeable color */
+    transition: background-color 0.5s ease; /* Smooth transition */
+}
+
+
+
+/* Services section */
+#services {
+    width: 90%; /* Slightly wider than the welcome section */
+    display: flex;
+    margin-top: 30px; /* Space between sections */
+    flex-direction: column;
+    align-items: center; /* Centers the title and grid */
+    margin-bottom: 20px;
+}
+
+/* Title for services */
+#services-header {
+    text-align: center;
+    margin-bottom: 20px; /* Space before articles start */
+}
+
+/* Grid for service articles */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    grid-auto-rows: minmax(100px, auto); /* Ensures rows size automatically */
+    gap: 20px; /* Space between articles */
+    width: 100%; /* Full width of the services container */
+}
+
+/* Each service article */
+article {
+    background-color: #fff;
+    border: 2px solid #cfcece;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Distribute space evenly */
+    min-height: 180px; /* Minimum height to ensure uniform size */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Header and translation inside each article */
+article h3, article p {
+    text-align: center; /* Center these texts */
+    margin: 5px 0; /* Reduced margin */
+}
+
+/* Options for services using flexbox */
+.service-options {
+    display: flex;
+    justify-content: space-around; /* Evenly space buttons */
+    width: 100%; /* Use full width of the article for better control */
+    margin-top: 10px; /* Space from the text above */
+}
+
+/* Button styling within service options */
+.service-options button {
+    padding: 15px; /* Allow buttons to fill the container */
+    background-color: #00485a; 
+    margin-top: 5px;
+}
+
+.service-options button img {
+    width: 18px; /* Reduce icon size to match smaller button */
+    height: 18px;
+}
+
+.service-options button:hover {
+    background-color: #005fa3; 
+}
+
+.service-options a {
+    text-decoration: none; /* Removes underline from links */
+    color: inherit; /* Inherits text color from parent */
+    display: block;
+}
+
+/* Information section styling */
+#info {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers everything in the info section */
+    margin: 40px auto; /* Adds top and bottom margin for spacing */
+}
+
+#info-header {
+    text-align: center;
+    margin-top: 20px; /* Margin above the header */
+    margin-bottom: 30px; /* Margin below the header before the boxes */
+}
+
+.information-sections {
+    display: flex;
+    justify-content: space-between; /* Positions the boxes side by side */
+    width: 100%; /* Takes full width to allow space between boxes */
+    gap: 20px; /* Space between the two boxes */
+}
+
+.info-box {
+    background-color: #fff;
+    border: 2px solid #cfcece;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    flex: 1; /* Each box takes equal width */
+    display: flex;
+    flex-direction: column;
+}
+
+.info-box h3 {
+    text-align: center; /* Ensures the title is centered within the box */
+    margin: 0; /* Removes default margin to better control spacing */
+    padding-bottom: 10px; /* Adds some space below the title */
+}
+
+.info-list {
+    list-style-type: disc; /* Adds bullet points to the list */
+    padding-left: 20px; /* Provides space for bullet points */
+    margin: 10px 0; /* Adds vertical space around the list */
+}
+
+.info-list li {
+    padding: 5px 0; /* Spacing between list items */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .information-sections {
+        flex-direction: column; /* Stacks information boxes vertically on smaller screens */
+        align-items: center; /* Centers the boxes for aesthetics */
+    }
+
+    .info-box {
+        width: 100%; /* Full width for better readability on small devices */
+    }
+}
